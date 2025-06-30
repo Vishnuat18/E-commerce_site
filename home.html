@@ -19,6 +19,16 @@
       </div>
     </div>
   </section>
+  <div id="welcome-message" class="top-txt head container"></div>
+<script src="home.js">
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+const welcomeDiv = document.getElementById("welcome-message");
+if (currentUser) {
+    welcomeDiv.innerHTML = `Welcome, <strong>${currentUser.username}</strong>!`;
+} else {
+    window.location.href = "login.html";
+  }
+</script>
 
   <nav class="navbar">
     <div class="navbar-container">
