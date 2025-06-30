@@ -1,172 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrendSet</title>
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TrendSet</title>
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <section class="top-txt">
-        <div class="head container">
-            <div class="head-txt">
-                <p>Free shipping, 30-day return or refund guarantee.</p>
-            </div>
-            <div class="sing_in_up">
-                <a href="#account" class="no-scroll">SIGN IN</a>
-                <a href="#account" class="no-scroll">SIGN UP</a>
-            </div>
-        </div>
-    </section>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <input type="checkbox" name="" id="checkbox">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
-            <ul class="menu-items">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sellers">Shop</a></li>
-                <li><a href="#cart">Cart</a></li>
-                <li><a href="#account">Account</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="logo">
-                <h1><span class="highlight">S</span>hop.<span class="highlight">E</span>tc</h1>
-            </div>
-        </div>
-    </nav>
-    <section class="search-bar container">
-        <input type="text" id="search" placeholder="Search products..." aria-label="Search products">
-        <select id="category" aria-label="Filter by category">
-            <option value="All">All Categories</option>
-            <option value="Clothing">Clothing</option>
-            <option value="Shoes">Shoes</option>
-            <option value="Accessories">Accessories</option>
-        </select>
-    </section>
-    <section id="home">
-        <div class="home_page">
-            <div class="home_img">
-                <img src="imgs/Home.jpg" alt="Shop.Etc Collection">
-            </div>
-            <div class="home_txt">
-                <p class="collectio">SHOP.ETC COLLECTION</p>
-                <h2>Season Sparker<br>2025 Brand New Collection</h2>
-                <div class="home_label">
-                    <p>The joy of discovery awaits <br> "Let's find something special today... <br></p>
-                </div>
-                <button><a href="#sellers" style="color: white;">EXPLORE NOW</a><i class="bx bx-right-arrow-alt"></i></button>
-                <div class="home_social_icons">
-                    <a href="https://facebook.com" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
-                    <a href="https://twitter.com" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
-                    <a href="https://pinterest.com" aria-label="Pinterest"><i class="bx bxl-pinterest"></i></a>
-                    <a href="https://instagram.com" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="collection">
-        <div class="collections container">
-            <div class="content">
-                <img src="https://i.postimg.cc/Xqmwr12c/clothing.webp" alt="Clothing Collections" />
-                <div class="img-content">
-                    <p>Clothing Collections</p>
-                    <button><a href="#sellers">SHOP NOW</a></button>
-                </div>
-            </div>
-            <div class="content2">
-                <img src="https://i.postimg.cc/8CmBZH5N/shoes.webp" alt="Shoe Collection" />
-                <div class="img-content2">
-                    <p>Shoe Collection</p>
-                    <button><a href="#sellers">SHOP NOW</a></button>
-                </div>
-            </div>
-            <div class="content3">
-                <img src="https://i.postimg.cc/MHv7KJYp/access.webp" alt="Accessories" />
-                <div class="img-content3">
-                    <p>Accessories</p>
-                    <button><a href="#sellers">SHOP NOW</a></button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="sellers">
-        <div class="seller container">
-            <h2>Top Sales</h2>
-            <div class="best-seller"></div>
-        </div>
-        <div class="seller container">
-            <h2>New Arrivals</h2>
-            <div class="best-seller"></div>
-        </div>
-        <div class="seller container">
-            <h2>Hot Sales</h2>
-            <div class="best-seller"></div>
-        </div>
-    </section>
-    <section id="cart">
-        <div class="container">
-            <h2>Shopping Cart</h2>
-            <div class="cart-items"></div>
-            <div class="cart-total"></div>
-        </div>
-    </section>
-    <section id="checkout">
-        <div class="container">
-            <h2>Checkout</h2>
-            <form id="checkout-form" class="checkout-form">
-                <input type="text" id="checkout-name" placeholder="Full Name" aria-label="Full Name" required>
-                <input type="text" id="checkout-address" placeholder="Shipping Address" aria-label="Shipping Address" required>
-                <select id="checkout-payment" aria-label="Payment Method" required>
-                    <option value="">Select Payment Method</option>
-                    <option value="credit">Credit Card</option>
-                    <option value="paypal">PayPal</option>
-                    <option value="upi">UPI</option>
-                </select>
-                <button type="submit" aria-label="Place Order">Place Order</button>
-            </form>
-        </div>
-    </section>
-    <section id="account">
-        <div class="container">
-            <h2>Account</h2>
-            <div id="auth-forms" class="auth-forms">
-                <h3>Login</h3>
-                <form id="login-form">
-                    <input type="text" id="login-username" placeholder="Username" aria-label="Username" required>
-                    <input type="password" id="login-password" placeholder="Password" aria-label="Password" required>
-                    <button type="submit" aria-label="Login">Login</button>
-                </form>
-                <h3>Sign Up</h3>
-                <form id="signup-form">
-                    <input type="text" id="signup-username" placeholder="Username" aria-label="Username" required>
-                    <input type="email" id="signup-email" placeholder="Email" aria-label="Email" required>
-                    <input type="password" id="signup-password" placeholder="Password" aria-label="Password" required>
-                    <button type="submit" aria-label="Sign Up">Sign Up</button>
-                </form>
-            </div>
-            <div id="profile"></div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form id="contact-form" class="contact-form">
-                <input type="text" id="contact-name" placeholder="Your Name" aria-label="Your Name" required>
-                <input type="email" id="contact-email" placeholder="Your Email" aria-label="Your Email" required>
-                <textarea id="contact-message" placeholder="Your Message" rows="5" aria-label="Your Message" required></textarea>
-                <button type="submit" aria-label="Send Message">Send Message</button>
-            </form>
-        </div>
-    </section>
-    <div id="modal" class="modal">
-        <div id="modal-content" class="modal-content"></div>
+  <section class="top-txt">
+    <div class="head container">
+      <div class="head-txt">
+        <p>Free shipping, 30-day return or refund guarantee.</p>
+      </div>
+      <div class="sing_in_up">
+        <a href="#account" class="no-scroll">SIGN IN</a>
+        <a href="#account" class="no-scroll">SIGN UP</a>
+      </div>
     </div>
-    <div id="notification" class="notification"></div>
-    <script src="Script.js"></script>
+  </section>
+
+  <nav class="navbar">
+    <div class="navbar-container">
+      <input type="checkbox" name="" id="checkbox" />
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul class="menu-items">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sellers">Shop</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#account">Account</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="logo">
+        <h1><span class="highlight">S</span>hop.<span class="highlight">E</span>tc</h1>
+      </div>
+    </div>
+  </nav>
+
+  <section class="search-bar container">
+    <input type="text" id="search" placeholder="Search products..." aria-label="Search products" />
+    <select id="category" aria-label="Filter by category">
+      <option value="All">All Categories</option>
+      <option value="Clothing">Clothing</option>
+      <option value="Shoes">Shoes</option>
+      <option value="Accessories">Accessories</option>
+    </select>
+  </section>
+
+  <section id="sellers">
+    <div class="seller container">
+      <h2>Shop Products</h2>
+      <div class="best-seller"></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
