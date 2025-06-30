@@ -750,6 +750,77 @@ body {
     }
 }
 
+.auth-container {
+  display: flex;
+  width: 60%;
+  margin: 80px auto;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.auth-left {
+  flex: 1;
+  background-color: #2874f0;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.auth-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.auth-right {
+  flex: 1;
+  padding: 40px 30px;
+}
+
+.auth-right h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.auth-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-right input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.auth-right button {
+  padding: 12px;
+  background-color: #2874f0;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-right button:hover {
+  background-color: #0d5dc0;
+}
+
+.auth-right .redirect {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.auth-right .redirect a {
+  color: #2874f0;
+  text-decoration: none;
+}
+
 @media (orientation: landscape) and (max-height: 500px) {
     .home_page {
         height: 90vmax;
